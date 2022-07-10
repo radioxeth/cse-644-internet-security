@@ -125,7 +125,7 @@ void got_packet(u_char *args,const struct pcap_pkthdr *header, const u_char *pac
   printf("      To: %s\n",inet_ntoa(ip->iph_sourceip));
 
   // determine protocol
-  if(ip-iph_protocol == IPPROTO_ICMP){
+  if(ip->iph_protocol == IPPROTO_ICMP){
     printf("    Protocol: ICMP\n");
     spoof_icmp_reply(ip);
   }
@@ -278,3 +278,82 @@ int main(){
 }
 
 ```
+
+## 2.7 Sniffing and Spoofing: Code and Examples
+
+> **snoofing** *sniffing and spoofing*
+
+### Snififng the ICMP requeset
+
+
+[get a packet and process it](#get-a-packet-and-process-it)
+```C
+got_packet(...); //see above (get a packet and process it)
+
+/****************************************
+given a captured ICMP echo request packet, construct a spoofed ICMP
+echo reply, which includes IP + ICMP (there is no data)
+****************************************/
+void spoof_icmp_reply(struct ipheader* ip){
+  int ip_header_len = ip->iph_ipl * 4;
+  const char buffer[BUFSIZE];
+
+  struct icmpheader* icmp = (struct icmpheader *)((u_char *)ip + ip_header_len);
+  if(icmp->icmp_type!=8) {//only process icmp recho request
+    printf("not an echo request\n");
+    return;
+  }
+
+  // make a copy from original packet to buffer (faked packet)
+  memset((char*)buffer,0,BUFSIZE);
+  memset((char*)buffer,ip,ntohs(ip->iph_len));
+  struct ipheader * newip = (struct ipheader *) buffer;
+  struct icmpheader * newicmp = (struct icmpheader *) ((u_char *)buffer + ip_header_len);
+
+  // construct IP: sqap src and dest in faked ICMP packet
+  newip->iph_sourceip = ip->iph_destip;
+  newip->iph_destip = ip->source_ip;
+  newip->iph_ttl = 20;
+  newip->iphprotocol = IPPROTO_ICMP;
+
+  // fill in all the needed ICMP header information
+  // ICMP Type: 8 is request, 0 is reply
+  newicmp->icmp_type = 0;
+
+  // Calculate the checksum for integrity. ICMP checksum includes the data
+  newicmp->icmp_chksum = 0; // set it to zero first
+  newicmp->icmp_chksum = in_chksum((unsigned short *)newicmp,ntohs(ip->iph_len) - ip_header_len);
+
+  send_raw_ip_packet(newip);
+}
+```
+
+Three steps to the *snoofing* stack
+1. Sniffing
+2. Spoofing Copy info/construct packet
+3. Send spoofed packet
+
+## 2.8 Byte Order
+
+When A sends integer to B
+Say integer is `0x87654321`
+
+order matters for different computer architectures. So we have to speficy the order of bytes `little endian` or `big endian` using the **network order** and **host order**
+
+> **h** *host*
+
+>**n** *network*
+
+|macro|description|functionality|
+|-|-|-|
+|`htons()`|Host to Network Short|used to convert unsigned short integer from host byte-order to netowrk byte-order|
+|`htonl()`|Host to Network Long|used to conver unsigned integer from host byte-order to network byte-order|
+|`ntohs()`|Network to Host Short|used to conver unsigned short integer from network byte-order to host byte-order|
+|`ntohl()`|Network to Host Long|used to convert unsigend integer from network byte-order to host byte-order|
+
+## 2.9 Summary
+
+- packet sniffing using `pcap library`
+- packet spoofing using raw socket
+- sniffing and spoofing
+- byte order
