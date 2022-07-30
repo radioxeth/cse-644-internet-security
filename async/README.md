@@ -1098,3 +1098,147 @@ UDP
  - UDP applications
  - Attacking strategy: magnify power, ping-pong
  - Attack on or using UDP
+
+
+# Week 5 Live Session
+### TCP IP Vulnerabilites
+TCP/IP Vulnerabilities
+- transmissioncontrol protocol/internet protocol
+- unauthorized users may launch a denial-of-service attack on the destination computer
+
+### Data Encapsulation
+- Data encapsulation
+  - enclosing higher-level protocol information in lower level protocol information
+  - also called data hiding
+  - implementation details of a class are hidden from user
+
+### IP Internet Protocol
+- Internet Protocol
+  - transmits data from source to final destination
+  - network protocol operating at layer 3 of the OSI model
+    - and layer 2or 3 of the TCP/IP model
+  - IP is connectionless
+  
+- 2 verions of IP
+  - IPv4 (32-bit address)
+  - IPv6 (128-bit)
+    - writeen as group of 8 hex addresses
+
+- fragmentations
+  - does kernel or user fragment packets?
+
+#### TCP 
+- souce and destination computer exchange the **initial sequence number** (ISN)
+
+# Week 5: TCP Protocol
+
+## 5.2 The TCP Protocol and Attacks on TCP
+
+### The need for TCP
+
+- UDP does not:
+  - packet loss
+  - preserve order
+
+- TCP:
+  - handle packet loss
+  - preserves order
+
+## 5.3 TCP Client/Server Programming
+
+### TCP Client Program
+```C
+#include <stdio.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <netinet/ip.h>
+
+int main(){
+  //Create socket
+  int sockfd = socket(AF_INET,SOCK_STREAM,0);
+  
+  //Set the destination information
+  struct sockaddr_in dest;
+  memset(&dest, 0, sizeof(struct sockaddr_in));
+  dest.sin_family = AF_INET;
+  dest.sin_addr.s_add = inet_addr("10.0.2.17");
+  dest.sin_port = htons(9090); // host to network (short, port is a short)
+
+  // connect to the server
+  connect(sockfd, (struct sockaddr *)&dest, sizeof(struct sockaddr_in)); // establish connection!
+  //
+
+  //write data
+  char *buffer1 = "Hello server\n";
+  char *buffer2 = "Hello again!\n";
+  write(sockfd, buffer1, strlen(buffer1));
+  write(sockfd, buffer2, strlen(buffer2));
+
+  return 0;
+}
+```
+
+- UDP is a data gram
+- TCP is a stream
+
+### TCP Server Program
+```C
+#include <stdio.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <netinet/ip.h>
+
+int main(){
+  int sockfd, newsockfd,
+  struct sockaddr_in my addr, client_addr;
+  char buffer[100];
+
+  //create socket
+  sockfd = socket(AF_INET,SOCK_STREAM,0);
+
+  // set the destination information
+  memset(&my_add,0,sizeof(struct sockaddr_in));
+  my_addr.sin_family = AF_INET;
+  my_addr.sin_port = htons(9090);
+
+  //bind the socket to a port number
+  bind(sockfd. (struct sockaddr *)&my_addr, sizeof(struct sockaddr_in)); //register with port
+  //(client side OS dynamically assigns port)
+
+  //listen for connections
+  listen(sockfd, 5); // i am ready - this is a queue, application get stuff out of queue
+  int client_len = sizeof(client_addr);
+  newsockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);// block, wait, dequeue
+
+  // read data
+  memset(buffre, 0, sizeof(buffer));
+  int len = read(newsockfd, buffer, 100);
+  printf("received %d bytes: %s", len, buffer);
+
+  return 0;
+}
+```
+
+### Accepting multiple connections
+```C
+while (1) {
+  newsockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
+  if (fork()==0){//child process
+    close(sockfd);
+    //read data
+    memset(buffer, 0, sizeof(buffer));
+    int len = read(newsockfd, buffer, 100);
+    printf("received  %d bytes. \n%s\n", len, buffer);
+
+    close(newsockfd);
+    return 0;
+  } else { // parent process
+    close(newsockfd);
+  }
+
+}
+```
+- after you `accept`
+  - fork to create a new process
+  - create a new socket
+- old socket needs to be used to wait for data
