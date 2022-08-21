@@ -1980,6 +1980,7 @@ unsigned short set_A_record(char *buffer, char *name, char offset, char *ip_addr
 ## 7.6 How to Encrypt Multiple Blocks
 
 ### Encrypt more than one block
+#### ECB: Electronic Codebook
 - Single block cipher
   - DES
     - 64 bit block
@@ -2014,7 +2015,7 @@ unsigned short set_A_record(char *buffer, char *name, char offset, char *ip_addr
 - can complete encryption in parallel 
   - offline help
 
-### Counter MOde (CTR)
+### Counter Mode (CTR)
 <img src='./images/counter_mode.png'>
 
 - no chaining
