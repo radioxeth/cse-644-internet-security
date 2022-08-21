@@ -5,7 +5,7 @@
 ## 1.8 IP Address
 
 *classful scheme*
-32-bit ip address $2^32$
+32-bit ip address $2^{32}$
 
 - Class A
   - $2^{24}$
