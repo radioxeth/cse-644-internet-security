@@ -1999,7 +1999,7 @@ unsigned short set_A_record(char *buffer, char *name, char offset, char *ip_addr
   - Initialization Vector changes the first cipher block, thus changing the whole cipher 
   - IV not secret, but needs to be random and unique
 
-### Cipher Feedback (CFP)
+### Cipher Feedback (CFB)
 
 **Stream Cipher**
 <img src='./images/cipher_feedback.png'>
