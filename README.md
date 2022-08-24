@@ -1992,7 +1992,9 @@ unsigned short set_A_record(char *buffer, char *name, char offset, char *ip_addr
     - 128 bit block
   - have to encrypt each block separately, otherwise we can establish a pattern between multiple ciperblocks
 <img src='./images/7_6_blockcipher.png' width=750>
+
 ## 7.7 Encryption Modes
+
 ### Cipher Block Chaining (CBC) Mode
 
 **Block Cipher**
