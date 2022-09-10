@@ -1,5 +1,5 @@
 
-# Week 6: DNS
+# Week 6 DNS
 
 ## 6.2 Domain Name Systems (DNS)
 - humans want to go to nammed address

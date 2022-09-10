@@ -1,5 +1,5 @@
 
-# Week 8: Public-Key Encryption and PKI
+# Week 8 Public-Key Encryption and PKI
 
 ## 8.2 Public-Key Encryption
 ### Public-Key Cryptography: History and Concept

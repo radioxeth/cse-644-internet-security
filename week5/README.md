@@ -1,5 +1,5 @@
 
-# Week 5: TCP Protocol
+# Week 5 TCP Protocol
 
 ## 5.2 The TCP Protocol and Attacks on TCP
 

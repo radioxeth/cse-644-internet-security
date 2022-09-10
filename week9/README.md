@@ -321,5 +321,4 @@ void socketSelected (int tunfd, int sockfd){
 - VPN implementation (code explanation)
 - bypassing firewalls using VPN
 
-# Week 10: Border Gateway Protocol (BGP)
-- routing protocol that glues the internet together
+

@@ -1,3 +1,8 @@
+# Week 10 BGP
+
+**Border Gateway Protocol**
+
+- routing protocol that glues the internet together
 
 ## 10.2 BGP and Attacks on BGP
 
