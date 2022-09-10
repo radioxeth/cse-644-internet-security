@@ -2,7 +2,7 @@
 **cse-644-internet-security**
 
 ## Table of Contents
-
+- [Home](/README.md#table-of-contents)
 - [Week 1 Introduction to Internet Security](/week1/README.md#Week-1-Introduction-to-Internet-Security)
 - [Week 2 Sniffing and Spoofing Packets](/week2/README.md#Week-2-Sniffing-and-Spoofing-Packets)
 - [Week 3 IP Protocol](/week3/README.md#Week-3-IP-Protocol)
