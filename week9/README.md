@@ -306,7 +306,7 @@ void socketSelected (int tunfd, int sockfd){
 
 
 - host 128.230.0.0/16
-<img src=./images/9_9_route_table.png>
+<img src=/images/9_9_route_table.png>
 - what is Computer's real IP address (addres of wifi card)?
   - 10.1.56.64
 - What is the IP address of the VPN server?

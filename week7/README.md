@@ -110,14 +110,14 @@
   - AES
     - 128 bit block
   - have to encrypt each block separately, otherwise we can establish a pattern between multiple ciperblocks
-<img src='./images/7_6_blockcipher.png' width=750>
+<img src='/images/7_6_blockcipher.png' width=750>
 
 ## 7.7 Encryption Modes
 
 ### Cipher Block Chaining (CBC) Mode
 
 **Block Cipher**
-<img src='./images/7_6_blockcipher_actual.png' width=750>
+<img src='/images/7_6_blockcipher_actual.png' width=750>
 
 - Initialization Vector (IV)
   - Initialization Vector allows us to reuse the same block ciper logic in hardware
@@ -127,21 +127,21 @@
 ### Cipher Feedback (CFB)
 
 **Stream Cipher**
-<img src='./images/cipher_feedback.png'>
+<img src='/images/cipher_feedback.png'>
 - IV feeds into block cipher encryption first
 - main difference
   - don't need full plaintext because the IV is always there. xor works with full IV against partial plaintext
 
 ### Output Feedback (OFB)
 
-<img src='./images/output_feedback.png'>
+<img src='/images/output_feedback.png'>
 
 - don't need to wait for plaintext to create the cipher
 - can complete encryption in parallel 
   - offline help
 
 ### Counter Mode (CTR)
-<img src='./images/counter_mode.png'>
+<img src='/images/counter_mode.png'>
 
 - no chaining
 - stream cipher
