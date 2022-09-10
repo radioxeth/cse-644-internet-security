@@ -7,6 +7,7 @@
 
 
 ## 1.5 Packet Flow Over the Internet
+([top](#table-of-contents))
 
 ## 1.8 IP Address
 
