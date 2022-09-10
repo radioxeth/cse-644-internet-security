@@ -9,6 +9,8 @@
 
 
 ## 8.2 Public-Key Encryption
+([top](#directory))
+
 ### Public-Key Cryptography: History and Concept
 
 - how to solve the key exchange problem?
@@ -33,6 +35,8 @@
    - GCHQ (classified)
 
 ## 8.3 Diffie-Hellman Key Exchange
+([top](#directory))
+
 - Alice
 - Bob
 - Eve
@@ -65,6 +69,7 @@ $g^{xy}\mod{p}$ common number known by Bob and Alice.
       - need to send $g^y\mod{p}$ so Alice can decrypt
 
 ## 8.4 RSA Public-Key Encryption Algorithm
+([top](#directory))
 
 ### RSA Algorithm
 - Factoring large numbers is hard.
@@ -100,6 +105,7 @@ $g^{xy}\mod{p}$ common number known by Bob and Alice.
         - $M^{(p-1)(q-1)}\mod{pq}=1$
 
 ## 8.5 Exercise Related to RSA
+([top](#directory))
 
 ### Summarize RSA
 - n=pq
@@ -128,6 +134,8 @@ dont just raise to 17
 just use rsa for public key exchange because it is  expensive. After that use symetric key
 
 ## 8.6 Man-in-the-Middle Attack
+([top](#directory))
+
 - Alice
 - Bob
 
@@ -143,6 +151,7 @@ just use rsa for public key exchange because it is  expensive. After that use sy
 - difficult to launch this attack, but is possible
 
 ## 8.7 Digital Signature
+([top](#directory))
 
 - Alice sends (e,n)
   - how do we verify that (e,n) belongs to alice?
@@ -160,6 +169,7 @@ just use rsa for public key exchange because it is  expensive. After that use sy
 - Bob needs to know the public key of the trusted party
 
 ## 8.8 X.509 Certificate
+([top](#directory))
 
 Alice: (e,n) signature
 
@@ -365,6 +375,7 @@ SSL_CTX_free(ctx);
 ```
 
 ## 8.10 The Trust on CA
+([top](#directory))
 
 ### Root Certificate Authority (CA)
 
@@ -394,6 +405,7 @@ Can launch man in the middle attack
   - software needs to check.
 
 ## 8.11 Application: DNSSEC
+([top](#directory))
 
 ### DNSSEC
 - request
@@ -403,6 +415,7 @@ Can launch man in the middle attack
   - doesn't rely on certificate
 
 ## 8.12 Summary
+([top](#directory))
 
 - Public key encryption concept
 - Diffie-hellman key exchange protocol

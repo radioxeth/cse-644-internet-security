@@ -8,6 +8,7 @@
 - [Week 10 BGP](/week10/README.md#week-10-BGP)
 
 ## 9.2 Virtual Private Network
+([top](#directory))
 
 ### Why VPN?
 
@@ -25,6 +26,7 @@
 **Transparent**
 
 ## 9.3 How VPN Works
+([top](#directory))
 
 ### Solutions
 
@@ -50,6 +52,7 @@
   - is other OS compatible with kernel changes?
 
 ## 9.4 VPN Implementation 1
+([top](#directory))
 
 ### The TUN/TAP Interface
 
@@ -128,6 +131,7 @@ ping 10.0.4.32
 ```
 
 ## 9.5 VPN Implementation 2
+([top](#directory))
 
 - telnet generates IP TCP/UDP Data
 - routing to tun interface
@@ -154,6 +158,7 @@ ping 10.0.4.32
   - use TUN program IP
 
 ## 9.6 VPN Code Explanation 1
+([top](#directory))
 
 ### VPN Implementation Code: The Overall Flow
 
@@ -217,6 +222,7 @@ int initUDPServer(){
 ```
 
 ## 9.7 VPN Code Explanation 2
+([top](#directory))
 
 #### Monitor the TUN and Socket Interfaces
 
@@ -280,6 +286,7 @@ void socketSelected (int tunfd, int sockfd){
 ```
 
 ## 9.8 Set Up a VPN
+([top](#directory))
 
 ### Network Setup
 
@@ -303,7 +310,7 @@ void socketSelected (int tunfd, int sockfd){
   - run on the vpn client (host u)
 
 ## 9.9 Find the ip address
-
+([top](#directory))
 
 - host 128.230.0.0/16
 <img src=/images/9_9_route_table.png>
@@ -315,9 +322,11 @@ void socketSelected (int tunfd, int sockfd){
   - 128.230.153.98
 
 ## 9.10 Bypassing Firewalls Using VPN
+([top](#directory))
 
 
 ## 9.11 Summary
+([top](#directory))
 
 - concept of VPN
 - how VPN works

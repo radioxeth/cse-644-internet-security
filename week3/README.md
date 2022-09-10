@@ -7,6 +7,7 @@
 - [Week 4 Firewall](/week4/README.md#Week-4-Firewall)
 
 ## 3.2 IP Protocol
+([top](#directory))
 
 IP Header and Protocol (32-bits)
 - 4-bit version (4)
@@ -55,6 +56,8 @@ A$\rightarrow$B number of hops? Use TTL
 
 
 ## 3.3 IP Fragmentation
+([top](#directory))
+
 - complicated, so attacker finds opourtunity
 
 ### IP Fragmentation: Why
@@ -100,6 +103,7 @@ The wire doesn't accomidate a packet of 64k, 1500 limit on frames usually, stand
 2. more fragments
 
 ## 3.4 Attacks on IP Fragmentation
+([top](#directory))
 
 > **protocol** *In information technology, a protocol is the special set of rules that end points in a telecommunication connection use when the communicate. Protocols speci*fy interactions between the communicating entities.*
 
@@ -110,6 +114,7 @@ The wire doesn't accomidate a packet of 64k, 1500 limit on frames usually, stand
 - create unreal condition
 
 ## 3.5 Attacks on IP Fragmentation
+([top](#directory))
 
 ### Attack 1: Tie Up Target's Resources
 
@@ -130,6 +135,7 @@ Create overlapping packet fragments.
 Don't assume that packets comming in order have the right offest.
 
 ## 3.6 ICMP Protocol
+([top](#directory))
 
 ### ICMP: Internet Control Message Protocol
 
@@ -183,6 +189,7 @@ data: echo reply (type 0) myst return any data sent in echo request
 |14|Host precedence violation|
 
 ## 3.7 Attacks on ICMP
+([top](#directory))
 
 ### ICMP Redirect and Attacks
 
@@ -214,6 +221,7 @@ If we spoof the vicitim's IP, send to broadcast, N packets will be returned to v
 **Why doesn't this work anymore?**
 
 ## 3.8 Routing
+([top](#directory))
 
 **Routing:**
 1. routing tables
@@ -228,6 +236,7 @@ If we spoof the vicitim's IP, send to broadcast, N packets will be returned to v
 
 
 ## 3.9 Routing Table
+([top](#directory))
 
 line 1 is default route, destination 0.0.0.0
 router is connected to 0.0.0.0 and that is the gateway IP address
@@ -246,6 +255,7 @@ They will talk to all of the other networks (not directly)
 Then routing protocols happen inside the network
 
 ## 3.10 Summary
+([top](#directory))
 
 - IP Protocol
 - IP Fragmentation
@@ -255,6 +265,7 @@ Then routing protocols happen inside the network
 - Routing
 
 ## Live Session
+([top](#directory))
 
 ### Firewalls
 ### Introduction

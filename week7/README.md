@@ -25,8 +25,8 @@
     - using a MAC with shared secret key
     - similar to HMAC but with different padding
 
-# Week 7: Secret Key Encryption and One-way Hash Function
 ## 7.2 Secret-Key Encryption
+([top](#directory))
 
 ### Introduction to Cryptography
 - What is security?
@@ -54,6 +54,7 @@
 - One-way hash
 
 ## 7.3 Classical Cryptosystems
+([top](#directory))
 
 ### Classical Cryptosystems
 - Substitution Cipher
@@ -79,6 +80,7 @@
 - Cannot reuse the key
 
 ## 7.4 DES: Data Encryption Standard
+([top](#directory))
 
 ### DES History
 - IBM
@@ -92,6 +94,7 @@
 - Cracked in 1998 by brute force
 
 ## 7.5 AES: Advanced Encryption Standard
+([top](#directory))
 
 - NIST 2001
   - Rijndael (Rain Roll)
@@ -101,6 +104,7 @@
   - 256
 
 ## 7.6 How to Encrypt Multiple Blocks
+([top](#directory))
 
 ### Encrypt more than one block
 #### ECB: Electronic Codebook
@@ -113,6 +117,7 @@
 <img src='/images/7_6_blockcipher.png' width=750>
 
 ## 7.7 Encryption Modes
+([top](#directory))
 
 ### Cipher Block Chaining (CBC) Mode
 
@@ -152,10 +157,14 @@
 - if a bit is corrupted, only that block and one bit of the next block will be corrupted.
 
 ## 7.8 Padding
+([top](#directory))
+
 - block cipher needs whole plaintext to chain
 ### Padding: PKCS#5
 
 ## 7.9 Random Number Generation
+([top](#directory))
+
 ### why do we need ranom numbers?
 
 - key!
@@ -228,12 +237,15 @@ fclose(random);
 - quantum random number generator
 
 ## 7.10 Summary
+([top](#directory))
+
 - Classical Ciphers
 - DES and AES
 - Encryption Modes
 - Random number generator
 
 ## 7.11 One-way Hash Function
+([top](#directory))
 
 ### A game with online students
 - Student pick number A
@@ -245,6 +257,8 @@ fclose(random);
   - prof always wins
 
 ## 7.12 Concept of One-way Hash
+([top](#directory))
+
 ### Concept
 - hash: data -> fixed size
 - modulo is a hash function
@@ -270,6 +284,8 @@ fclose(random);
     - 512-bit SHA-512
 
 ## 7.13 replay the game
+([top](#directory))
+
 - Prof sends hash(A) to sudent
 - Sudent sends B
 - prof sends A
@@ -280,6 +296,8 @@ fclose(random);
   - fair to student
 
 ## 7.14 More Applications
+([top](#directory))
+
 ### Application: Time Stamping
 - publish the hash of a book because 512 bits is cheaper to publish than a whole book
 
@@ -291,6 +309,8 @@ fclose(random);
   - store in one-way hash
 
 ## 7.15 Message Authentcation Code
+([top](#directory))
+
 ### MAC: Message Authentication Code
 - A sends message M to B
   - ensure that integrity of M is not changed by man in the middle (mitm)
@@ -307,9 +327,13 @@ fclose(random);
 $HMAC_K(m)=h((K\oplus{}opad)||h(K\oplus{}ipad||m))$
 
 ## 7.16 Collision-Free is Broken
+([top](#directory))
+
 MD5 - found collisions
 
 ## 7.17 Summary
+([top](#directory))
+
 - one-way hash function
   - one-way property
   - collision-free property

@@ -10,6 +10,7 @@
 ([top](#directory))
 
 ## 1.8 IP Address
+([top](#directory))
 
 *classful scheme*
 32-bit ip address $2^{32}$
@@ -29,10 +30,13 @@ Net mask to identify where the boundary is from netid to hostid
 IPv6 and NAT (netword adjust translation)
 
 ## 1.9 Data link layer ethernet
+([top](#directory))
 
 payload Hardware addreess (MAC) burned into the NIC (permanent address)
 
-## 1.10 ARP Protocol
+## 1.10 ARP Protoco
+([top](#directory))
+l
 - Address Resolution Protocol
 
 IP $\Leftarrow$ $\Rightarrow$ Mac
@@ -45,6 +49,8 @@ Names->DNS->IP
 ARP Cache Poisoning
 
 ## Live Session
+([top](#directory))
+
 Do not follow due dates with syllabus.
 
 Collaborate with others on slack

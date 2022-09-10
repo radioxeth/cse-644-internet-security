@@ -8,12 +8,15 @@
 - [Week 5 TCP Protocol](/week5/README.md#Week-5-TCP-Protocol)
 
 ## 4.2 Firewall
+([top](#directory))
 
 - write a firewall
 - use a firewall
 - attackers bypass firewalls
 
 ## 4.2 Overview of How Firewall Works
+([top](#directory))
+
 - firewall inspects packets
 - based on policy
   - accept
@@ -34,9 +37,13 @@
 - application firewall
   - (web proxy)
 ## 4.3 Overview of how Firewall Works
+([top](#directory))
+
 - lots of diagrams
 
 ## 4.4 Linux Firewall Implementation
+([top](#directory))
+
 - nees to understand how packets flow into the host
 
 - packet flows into system's NIC
@@ -115,6 +122,7 @@ unsigned int telnetFilter(unsigned int hooknum, struct sk_buff *skb, const struc
 ```
 
 ## 4.5 Exercise: Iptables and UFW
+([top](#directory))
 
 ### iptables and uncomplicated firewall (UFW)
 
@@ -147,6 +155,8 @@ unsigned int telnetFilter(unsigned int hooknum, struct sk_buff *skb, const struc
    - `sudo ufw deny out from ${CLIENT_IP} to ${DEST_IP} port 80`
 
 ## 4.6 Exercise: Bypassing Firewall Using SSH Tunnel
+([top](#directory))
+
 - set up a counter measure
 - firewalls can be too restrictive so people want to bypass the firewall
 
@@ -180,6 +190,7 @@ unsigned int telnetFilter(unsigned int hooknum, struct sk_buff *skb, const struc
 
 
 ## 4.7 Web Proxy
+([top](#directory))
 
 ### Web Proxy: Application Firewall
 - proxy server
@@ -213,6 +224,7 @@ while(<>){
 ```
 
 ## 4.8 Summary
+([top](#directory))
 
 - concepts of firewall
 - firewall implementation (simple packet filter)
@@ -221,6 +233,8 @@ while(<>){
 - Web proxy firewall
 
 ## 4.9 UDP and Attacks
+([top](#directory))
+
 ## UDP Overview
 
 ### Transport Layer and Port Numbers
@@ -253,6 +267,8 @@ Port Numbers
     - when we send a packet, the OS assigns a return/src port address.
   
 ## 4.11 UDP Header and Protocol
+([top](#directory))
+
 - Transport Layer
   - TCP
     - complicated header
@@ -288,6 +304,7 @@ c. receive data
    - `recvfrom(sockfd, rec_buffer, ..., &from_addr, ...)`
 
 ## 4.12 Exercise: UDP Applications
+([top](#directory))
 
 - DNS protocol
 - video/audio streaming
@@ -311,6 +328,7 @@ UDP
   - if packet loss occurs, send request to client to resend dropped packets
 
 ## 4.13 Attacks on UDP
+([top](#directory))
 
 ### Causing Great Damange Using a Grenade
 - attack wants to target a powerful server
@@ -336,6 +354,8 @@ UDP
 - attacker sets src ip to dest ip, and sets src and dest port to 7. This will infinitely reply lol.
 
 ## 4.14 Summary
+([top](#directory))
+
 - Transport layer
 - port number
  - UDP protocol and header
@@ -345,6 +365,8 @@ UDP
 
 
 # Week 5 Live Session
+([top](#directory))
+
 ### TCP IP Vulnerabilites
 TCP/IP Vulnerabilities
 - transmissioncontrol protocol/internet protocol

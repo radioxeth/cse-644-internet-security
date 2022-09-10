@@ -8,6 +8,8 @@
 - [Week 7 Secret Key Encryption and One-way Hash Function](/week7/README.md#Week-7-Secret-Key-Encryption-and-One-way-Hash-Function)
 
 ## 6.2 Domain Name Systems (DNS)
+([top](#directory))
+
 - humans want to go to nammed address
 - computer only knows IP address
 - we need something in the middle,
@@ -25,6 +27,8 @@
   - use a structure
 
 ## 6.3 Organization of DNS Domains
+([top](#directory))
+
 ### Organization of DNS Zones
 - apollo.syr.edu
   - IP (ns = named server)
@@ -64,6 +68,8 @@
   - each root hosts this informatoin
 
 ## 6.4 Exercise: DNS Query
+([top](#directory))
+
 ### DNS Query: Principle
 - send query to local DNS server
   - dns cache
@@ -94,6 +100,8 @@
 <img src="//images/daniel_shannon_dns_query.png"/>
 
 ## 6.5 Set Up Your Own DNS
+([top](#directory))
+
 ### What happens when you have bought a domain name?
 example.com
 - vendor
@@ -144,6 +152,7 @@ ns   IN A 192.168.0.10 ; address of ns.example.net
 
 
 ## 6.6 Reverse DNS Lookup
+([top](#directory))
 
 ### Reverse DNS Lookup
 IP->name
@@ -164,6 +173,7 @@ IP->name
     - syr.edu
 
 ## 6.7 Attack Surface
+([top](#directory))
 
 ### Attack Surface
 - denial of service on the internet
@@ -171,6 +181,8 @@ IP->name
   - spoof the dns cache server
 
 ## 6.8 Fake Data Attacks
+([top](#directory))
+
 ### fake data in the additional section
 - rule
   - discard urelated information in addtional section
@@ -181,6 +193,8 @@ IP->name
   
 
 ## 6.9 DNS Cache-Poisoning Attack
+([top](#directory))
+
 - local DNS server
   - send request to server
   - attack injects reply
@@ -198,6 +212,8 @@ IP->name
     - response sets the cache period
 
 ## 6.11 Remote DNS Cache-Poisoning Attack
+([top](#directory))
+
 - The challenges
   - need to guess
     - dest port #: ?
@@ -221,6 +237,8 @@ You can request using a random named server and set the authority to ns.attacker
 #### DNSSEC
 
 ## 6.12 Construct DNS Packets for Attacks
+([top](#directory))
+
 - How do you spoof the DNS reply?
 - in order to construct the DNS response
   - construct IP header
@@ -321,12 +339,15 @@ unsigned short set_A_record(char *buffer, char *name, char offset, char *ip_addr
 ```
 
 ## 6.14 Denial-of-Service attack on DNS Server
+([top](#directory))
+
 - DOS attacks on the **root servers**
   - root is very robust and hard to take down
   - need many resources
 - DOS attacks on the **.cn nameservers**
 
 ## 6.14 Summary
+([top](#directory))
 
 - DNS Structure, root servers, TLDs
 - how DNS works
@@ -339,3 +360,4 @@ unsigned short set_A_record(char *buffer, char *name, char offset, char *ip_addr
   - case studies: Denial-of-service
 
 # Week 8 Live Session: Web Security
+([top](#directory))

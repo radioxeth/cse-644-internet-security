@@ -7,7 +7,10 @@
 - [Week 3 IP Protocol](/week3/README.md#Week-3-IP-Protocol)
 
 ## 2.2 Sniffing and Spoofing
+([top](#directory))
+
 ## 2.3 Packet Sniffing
+([top](#directory))
 
 - promiscuous mode 
   - NIC
@@ -93,7 +96,7 @@ void got_packet(u_char *args,const struct pcap_pkthdr *header, const u_char *pac
 ```
 
 ## 2.4 Packet Spoofing
-
+([top](#directory))
 
 #### packet sending
 
@@ -142,7 +145,7 @@ void send_raw_ip_packet(struct ipheader* ip){
 ```
 
 ## 2.5 Constructing Raw Packets
-
+([top](#directory))
 
 ```C
 // IP Header
@@ -239,6 +242,7 @@ int main(){
 ```
 
 ## 2.7 Sniffing and Spoofing: Code and Examples
+([top](#directory))
 
 > **snoofing** *sniffing and spoofing*
 
@@ -293,6 +297,7 @@ Three steps to the *snoofing* stack
 3. Send spoofed packet
 
 ## 2.8 Byte Order
+([top](#directory))
 
 When A sends integer to B
 Say integer is `0x87654321`
@@ -305,12 +310,13 @@ order matters for different computer architectures. So we have to speficy the or
 
 |macro|description|functionality|
 |-|-|-|
-|`htons()`|Host to Network Short|used to convert unsigned short integer from host byte-order to netowrk byte-order|
+|`htons()`|Host to Network Short|used to convert unsigned short integer from host byte-order to network byte-order|
 |`htonl()`|Host to Network Long|used to conver unsigned integer from host byte-order to network byte-order|
 |`ntohs()`|Network to Host Short|used to conver unsigned short integer from network byte-order to host byte-order|
 |`ntohl()`|Network to Host Long|used to convert unsigend integer from network byte-order to host byte-order|
 
 ## 2.9 Summary
+([top](#directory))
 
 - packet sniffing using `pcap library`
 - packet spoofing using raw socket
@@ -318,6 +324,7 @@ order matters for different computer architectures. So we have to speficy the or
 - byte order
 
 ## Week 3 Live Session
+([top](#directory))
 
 ### IP Security
 - VPN or SSL for ipsec

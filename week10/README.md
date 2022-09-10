@@ -11,12 +11,14 @@
 - routing protocol that glues the internet together
 
 ## 10.2 BGP and Attacks on BGP
+([top](#directory))
 
 ```bash
 $ traceroute
 ```
 
 ## 10.3 How the Internet is Connected
+([top](#directory))
 
 ### How the internets is connected: high-level picture
 
@@ -37,6 +39,7 @@ $ traceroute
 - ineternet2 (national)
 
 ## 10.4 How Backbones are Connected Physically
+([top](#directory))
 
 Physcially lay the cable
 
@@ -63,10 +66,12 @@ Physcially lay the cable
   - Purchase transit service from tier 2
 
 ## 10.5 Disputes Related to Peering and Connections
+([top](#directory))
 
 ### Level 3 vs Cogent Dispute (2005)
 
 ## 10.6 How Networks are "Glued" Together
+([top](#directory))
 
 ### How BGP Works
 
@@ -125,6 +130,7 @@ source:     RADB
 
 
 ## 10.7 BGP Prefix Deaggregation and Applications
+([top](#directory))
 
 Rule: longest match!
 
@@ -138,6 +144,7 @@ Rule: longest match!
   - choose longest match, 128.230.5.0/24
 
 ## 10.8 IP Anycast
+([top](#directory))
 
 ### IP Anycast F-Root Server
 
@@ -150,6 +157,7 @@ Many different locations, 30+
   - h
 
 ## 10.9 Attacks on BGP
+([top](#directory))
 
 ### How to attack a network using BGP
 
@@ -168,6 +176,7 @@ SU anounces 128.230.0.0/16
 
 
 ## 10.10 Case Studies on Attacks
+([top](#directory))
 
 ### Pakistan Hijacks YouTube
 
@@ -207,6 +216,7 @@ Pakistan
 
 
 ## 10.11 Protecting BGP
+([top](#directory))
 
 ### Protecting BPG
 
@@ -216,6 +226,7 @@ Pakistan
     - secure BGP
 
 ## 10.12 Summary
+([top](#directory))
 
 - How the internet is connected
 - Internet exchange and peering
