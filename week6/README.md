@@ -91,7 +91,7 @@
   - cache the answer
     - cache will expire
 
-<img src="/async/images/daniel_shannon_dns_query.png"/>
+<img src="//images/daniel_shannon_dns_query.png"/>
 
 ## 6.5 Set Up Your Own DNS
 ### What happens when you have bought a domain name?
