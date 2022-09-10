@@ -1,6 +1,12 @@
 
 # Week 6 DNS
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 5 TCP Protocol](/week5/README.md#Week-5-TCP-Protocol)
+- **&rarr;[Week 6 DNS](/week6/README.md#Week-6-DNS)**
+- [Week 7 Secret Key Encryption and One-way Hash Function](/week7/README.md#Week-7-Secret-Key-Encryption-and-One-way-Hash-Function)
+
 ## 6.2 Domain Name Systems (DNS)
 - humans want to go to nammed address
 - computer only knows IP address

@@ -1,5 +1,11 @@
 # Week 10 BGP
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 9 VPN](/week9/README.md#Week-9-VPN)
+- **&rarr;[Week 10 BGP](/week10/README.md#week-10-BGP)**
+
+
 **Border Gateway Protocol**
 
 - routing protocol that glues the internet together

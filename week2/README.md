@@ -1,5 +1,11 @@
 # Week 2 Sniffing and Spoofing Packets
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 1 Introduction to Internet Security](/week1/README.md#Week-1-Introduction-to-Internet-Security)
+- **&rarr;[Week 2 Sniffing and Spoofing Packets](/week2/README.md#Week-2-Sniffing-and-Spoofing-Packets)**
+- [Week 3 IP Protocol](/week3/README.md#Week-3-IP-Protocol)
+
 ## 2.2 Sniffing and Spoofing
 ## 2.3 Packet Sniffing
 

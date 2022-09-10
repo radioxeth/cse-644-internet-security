@@ -1,6 +1,12 @@
 
 # Week 4 Firewall
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 3 IP Protocol](/week3/README.md#Week-3-IP-Protocol)
+- **&rarr;[Week 4 Firewall](/week4/README.md#Week-4-Firewall)**
+- [Week 5 TCP Protocol](/week5/README.md#Week-5-TCP-Protocol)
+
 ## 4.2 Firewall
 
 - write a firewall

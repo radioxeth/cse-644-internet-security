@@ -1,6 +1,13 @@
 
 # Week 5 TCP Protocol
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 4 Firewall](/week4/README.md#Week-4-Firewall)
+- **&rarr;[Week 5 TCP Protocol](/week5/README.md#Week-5-TCP-Protocol)**
+- [Week 6 DNS](/week6/README.md#Week-6-DNS)
+
+
 ## 5.2 The TCP Protocol and Attacks on TCP
 
 ### The need for TCP

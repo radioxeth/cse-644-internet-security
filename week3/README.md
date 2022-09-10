@@ -1,5 +1,11 @@
 # Week 3 IP Protocol
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 2 Sniffing and Spoofing Packets](/week2/README.md#Week-2-Sniffing-and-Spoofing-Packets)
+- **&rarr;[Week 3 IP Protocol](/week3/README.md#Week-3-IP-Protocol)**
+- [Week 4 Firewall](/week4/README.md#Week-4-Firewall)
+
 ## 3.2 IP Protocol
 
 IP Header and Protocol (32-bits)

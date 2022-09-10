@@ -1,6 +1,13 @@
 
 # Week 8 Public-Key Encryption and PKI
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 7 Secret Key Encryption and One-way Hash Function](/week7/README.md#Week-7-Secret-Key-Encryption-and-One-way-Hash-Function)
+- **&rarr;[Week 8 Public-Key Encryption and PKI](/week8/README.md#Week-8-Public-Key-Encryption-and-PKI)**
+- [Week 9 VPN](/week9/README.md#Week-9-VPN)
+
+
 ## 8.2 Public-Key Encryption
 ### Public-Key Cryptography: History and Concept
 

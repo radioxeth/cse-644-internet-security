@@ -1,6 +1,12 @@
 
 # Week 9 VPN
 
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 8 Public-Key Encryption and PKI](/week8/README.md#Week-8-Public-Key-Encryption-and-PKI)
+- **&rarr;[Week 9 VPN](/week9/README.md#Week-9-VPN)**
+- [Week 10 BGP](/week10/README.md#week-10-BGP)
+
 ## 9.2 Virtual Private Network
 
 ### Why VPN?

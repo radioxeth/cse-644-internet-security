@@ -1,5 +1,10 @@
-
 # Week 7 Secret Key Encryption and One-way Hash Function
+
+## Directory
+- [Home](/README.md#table-of-contents)
+- [Week 6 DNS](/week6/README.md#Week-6-DNS)
+- **&rarr;[Week 7 Secret Key Encryption and One-way Hash Function](/week7/README.md#Week-7-Secret-Key-Encryption-and-One-way-Hash-Function)**
+- [Week 8 Public-Key Encryption and PKI](/week8/README.md#Week-8-Public-Key-Encryption-and-PKI)
 
 ## SSL (Secure Socket Layer)
 - transport layer security service
